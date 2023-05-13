@@ -30,8 +30,8 @@ def get_html(url,proxies):
     while True:
         ind = random.randint(0,len(proxies)-1)
         proxy = proxies[ind]
-        httpProxy = "http://lajbfhob:lv8hi53mqepo@"+proxy
-        httpsProxy = "https://"+"lajbfhob:lv8hi53mqepo@"+proxy
+        httpProxy = "http://"+proxy
+        #httpsProxy = "https://"+"lajbfhob:lv8hi53mqepo@"+proxy
         #os.environ["http_proxy"] = httpProxy
         #os.environ["https_proxy"] = httpsProxy
         
@@ -97,7 +97,7 @@ def main(url,proxies):
     
 
 if __name__ == '__main__':
-    proxies = ["2.56.119.93:5074","185.199.229.156:7492","185.199.228.220:7300","185.199.231.45:8382","188.74.210.207:6286","188.74.183.10:8279","188.74.210.21:6100","45.155.68.129:8133","154.95.36.199:6893","45.94.47.66:8110"]
+    proxies = ['lajbfhob:lv8hi53mqepo@2.56.119.93:5074', 'lajbfhob:lv8hi53mqepo@185.199.229.156:7492', 'lajbfhob:lv8hi53mqepo@185.199.228.220:7300', 'lajbfhob:lv8hi53mqepo@185.199.231.45:8382', 'lajbfhob:lv8hi53mqepo@188.74.210.207:6286', 'lajbfhob:lv8hi53mqepo@188.74.183.10:8279', 'lajbfhob:lv8hi53mqepo@188.74.210.21:6100', 'lajbfhob:lv8hi53mqepo@45.155.68.129:8133', 'lajbfhob:lv8hi53mqepo@154.95.36.199:6893', 'lajbfhob:lv8hi53mqepo@45.94.47.66:8110']
     # Get User Input
     #proxies = get_free_proxies
     url = generate_url()
