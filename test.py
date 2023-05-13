@@ -9,3 +9,4 @@ url = input("Enter the URL of the website: ")
 r = requests.get(url)
 
 print(r.status_code)
+    
